@@ -114,7 +114,8 @@
                         const link = document.createElement('a');
 
                         // Prepend the subdirectory to the link's href if it exists
-                        link.href = SUBDIRECTORY ? `${SUBDIRECTORY}/${file.name}` : file.name;
+                        // link.href = SUBDIRECTORY ? `${SUBDIRECTORY}/${file.name}` : file.name;
+                        link.href = file.name;
                         link.textContent = file.title;
                         link.className = 'text-lg text-indigo-700 hover:underline font-medium';
 
