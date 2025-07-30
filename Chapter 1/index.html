@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chapter 1 Contents</title>
+    <title>Molecular Biology Notes</title>
     <!-- Tailwind CSS for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Google Fonts: Inter -->
@@ -21,8 +21,8 @@
     <div class="container mx-auto max-w-3xl px-4 py-12">
 
         <header class="text-center mb-10">
-            <h1 class="text-5xl font-bold text-gray-800">Physiology Chapter 1 Contents</h1>
-            <p class="mt-3 text-lg text-gray-600">A collection of notes and reports.</p>
+            <h1 class="text-5xl font-bold text-gray-800">Physiology Chapter 1</h1>
+            <p class="mt-3 text-lg text-gray-600">Cell Membrane and Transport.</p>
         </header>
 
         <main>
@@ -37,8 +37,8 @@
 
         <footer class="text-center mt-10">
             <p class="text-gray-500">
-                <!-- Link back to your main portfolio -->
-                <a href="https://mweisel3.github.io" class="hover:underline">Back to Main Portfolio</a>
+                <!-- This link is now set by the script below -->
+                <a id="portfolio-link" href="#" class="hover:underline">Back to Main Portfolio</a>
             </p>
         </footer>
 
@@ -47,14 +47,23 @@
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             // --- Configuration ---
-            // IMPORTANT: Replace these with your GitHub username and the name of this repository.
+
             const GITHUB_USERNAME = 'mweisel3';
-            const REPO_NAME = 'physiology_notes'; // Change if your repo has a different name
-            const SUB_DIRECTORY = 'Chapter 1'
+            const REPO_NAME = 'physiology-notes';
+            const SUBDIRECTORY = 'Chapter 1';
+
+            // This constant is now used to build all necessary URLs
+            const PORTFOLIO_URL = `https://${GITHUB_USERNAME}.github.io`;
             // --- End Configuration ---
 
             const topicsList = document.getElementById('topics-list');
-            const apiUrl = `https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/contents/${SUB_DIRECTORY}`;
+            const portfolioLink = document.getElementById('portfolio-link');
+
+            // Set the main portfolio link in the footer
+            portfolioLink.href = PORTFOLIO_URL;
+
+            // The API URL is updated to include the subdirectory
+            const apiUrl = `https://api.github.com/repos/${GITHUB_USERNAME}/${REPO_NAME}/contents/${SUBDIRECTORY}`;
 
             // Function to format the filename into a readable title
             function formatTitle(filename) {
@@ -62,7 +71,7 @@
                 const namePart = filename.substring(filename.indexOf('_') + 1, filename.lastIndexOf('.html'));
                 // Split by underscore, filter out the word "notes", capitalize each remaining word, and join with a space
                 return namePart
-                    .split('_')
+                    .split('-')
                     .filter(word => word.toLowerCase() !== 'notes') // Filter out the word "notes"
                     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                     .join(' ');
@@ -104,7 +113,8 @@
                         const listItem = document.createElement('li');
                         const link = document.createElement('a');
 
-                        link.href = file.name;
+                        // Prepend the subdirectory to the link's href if it exists
+                        link.href = SUBDIRECTORY ? `${SUBDIRECTORY}/${file.name}` : file.name;
                         link.textContent = file.title;
                         link.className = 'text-lg text-indigo-700 hover:underline font-medium';
 
