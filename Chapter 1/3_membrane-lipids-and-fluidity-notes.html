@@ -1,0 +1,160 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Membrane Lipids and Fluidity</title><script src="https://cdn.tailwindcss.com"></script><script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><style>body{font-family:'Inter',sans-serif}.indicator{transition:transform .2s}.expanded .indicator{transform:rotate(90deg)}[contenteditable=true]{outline:2px solid #60a5fa;box-shadow:0 0 0 4px rgba(96,165,250,.4);background-color: #fefce8 !important;}.prose table{width:100%;border-collapse:collapse;margin-top:1em;margin-bottom:1em}.prose th,.prose td{border:1px solid #e2e8f0;padding:8px}.prose th{background-color:#f8fafc;font-weight:600}.prose img{max-width:100%;height:auto;border-radius:8px;margin-top:1em;margin-bottom:1em}</style></head><body class="bg-slate-100 text-slate-700 p-4 md:p-8"><div class="max-w-6xl mx-auto"><header class="text-center mb-8"><h1 class="text-4xl font-extrabold text-slate-900">Membrane Lipids and Fluidity</h1></header><div class="flex justify-end gap-2 mb-4"><button id="save-file-btn" class="bg-green-600 text-white font-semibold text-sm py-1 px-3 rounded-md hover:bg-green-700">Save File</button><button id="expand-all" class="bg-blue-100 text-blue-800 font-semibold text-sm py-1 px-3 rounded-md hover:bg-blue-200">Expand All</button><button id="collapse-all" class="bg-gray-200 text-gray-800 font-semibold text-sm py-1 px-3 rounded-md hover:bg-gray-300">Collapse All</button></div><main class="space-y-3">
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-1">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">What are the main types of lipids in the membrane?</span>
+                    </div>
+                    <div id="notes-1" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <table>
+<thead>
+<tr>
+<th>Phospholipids</th>
+<th>Cholesterol</th>
+<th>Glycolipid</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>The most abundant, forming the basic bylaer structure</td>
+<td>An essential molecule that helps stabilize the membrane</td>
+<td>Lipids with attached carbohydrate groups, less are less common, but still present</td>
+</tr>
+</tbody></table>
+<p><img src="assets/three_kinds_of_lipids.png" alt="Three kinds of lipids"></p>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-2">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">What is the role of cholesterol</span>
+                    </div>
+                    <div id="notes-2" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <ul>
+<li>It&#39;s a critical component found in both the inner and outer leaflets of the membrane .</li>
+<li>It stabilizes and stiffens the membrane at normal body temperature .</li>
+<li><strong>Cholesterol can make up as much as 50% of the lipids in the membrane</strong>.</li>
+</ul>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-3">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">Is the membrane lipid composition symmetrical?</span>
+                    </div>
+                    <div id="notes-3" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <p>No:
+Outer leaflet: Predominantly Phosphatidylcholine and Sphingomyelin
+Inner leaflet: Predominantly Phosphatidylethanolamine, Phosphatidylserine, and Phosphatidylinositol</p>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-4">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">Is the membrane static?</span>
+                    </div>
+                    <div id="notes-4" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <p>The lipid bilayer is not a rigid structure but a dynamic, fluid one where components are in constant motion. This is often called the fluid mosaic model.</p>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-5">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">What kind of movements can the lipids make?</span>
+                    </div>
+                    <div id="notes-5" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <table>
+<thead>
+<tr>
+<th>Movement Type</th>
+<th>Movement Description</th>
+<th>Requires Energy</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Horizontal (Lateral)</td>
+<td>Sideways within own layer</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>Transpose (Traverse Diffusion/Flip Flop)</td>
+<td>Moves from one leaflet to another</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>Rotational/Flexion</td>
+<td>Fatty Acid tails constantly rotating around σ bonds</td>
+<td>❌</td>
+</tr>
+</tbody></table>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="note-section bg-white rounded-lg shadow-sm overflow-hidden">
+                <div class="grid grid-cols-12 gap-6 p-4">
+                    <div class="col-span-4 font-semibold text-slate-800 flex items-start gap-2 cue-trigger cursor-pointer" data-target="notes-6">
+                        <span class="indicator text-slate-400 mt-1">▶</span>
+                        <span class="editable-cue flex-1">What factors affect fluidity?</span>
+                    </div>
+                    <div id="notes-6" class="col-span-7 prose max-w-none hidden editable-notes">
+                        <ul>
+<li>Temperature (high temperature increases fluidity)</li>
+<li>Lipid composition - alkenes (double bonded C) increases fluidity because the &quot;kink&quot; in the tail limits tight packing</li>
+<li>Cholesterol - Moderates fluidity, making the membrane less fluid at high temperatures and more fluid at low temperates</li>
+</ul>
+
+                    </div>
+                    <div class="col-span-1 flex justify-end items-start">
+                        <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit section">
+                            <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                        </button>
+                    </div>
+                </div>
+            </div></main>
+            <div class="mt-8">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-2xl font-bold text-slate-800">Summary</h2>
+                    <button class="edit-section-btn p-1 rounded-full hover:bg-slate-200" title="Edit summary">
+                        <svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>
+                    </button>
+                </div>
+                <div class="prose max-w-none bg-white p-6 rounded-lg shadow-sm editable-summary"><p>The cell membrane is a fluid mosaic composed mainly of phospholipids, cholesterol, and glycolipids. These lipids are distributed asymmetrically between the two leaflets. Cholesterol is a key component that provides stability. The membrane&#39;s fluidity, which allows for the movement of its components, is primarily determined by temperature and the presence of unsaturated fatty acids.</p>
+</div>
+            </div></div><script>const pencilIcon='<svg class="w-5 h-5 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.536L16.732 3.732z"></path></svg>';const checkIcon='<svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>';function toggleSection(e,t){const n=e.dataset.target,o=document.getElementById(n),d=void 0===t?!o.classList.contains("hidden"):!t;d?(o.classList.add("hidden"),e.classList.remove("expanded")):(o.classList.remove("hidden"),e.classList.add("expanded"))}document.querySelectorAll(".cue-trigger").forEach(e=>{e.addEventListener("click",()=>toggleSection(e))}),document.getElementById("expand-all").addEventListener("click",()=>{document.querySelectorAll(".cue-trigger").forEach(e=>toggleSection(e,!0))}),document.getElementById("collapse-all").addEventListener("click",()=>{document.querySelectorAll(".cue-trigger").forEach(e=>toggleSection(e,!1))}),document.querySelectorAll(".edit-section-btn").forEach(e=>{e.addEventListener("click",()=>{const t=e.closest(".note-section,.mt-8"),n=t.querySelector(".editable-cue"),o=t.querySelector(".editable-notes"),d=t.querySelector(".editable-summary"),l="true"===n?.getAttribute("contenteditable")||"true"===d?.getAttribute("contenteditable");l?(e.innerHTML=pencilIcon,n?.setAttribute("contenteditable","false"),o?.setAttribute("contenteditable","false"),d?.setAttribute("contenteditable","false")):(e.innerHTML=checkIcon,n?.setAttribute("contenteditable","true"),o?.setAttribute("contenteditable","true"),d?.setAttribute("contenteditable","true"))})}),document.getElementById("save-file-btn").addEventListener("click",()=>{document.body.style.display="none";const e=document.documentElement.outerHTML,t=new Blob([e],{type:"text/html"}),n=document.createElement("a");n.href=URL.createObjectURL(t);const o=document.querySelector("title").textContent.toLowerCase().replace(/ /g,"-")+"-notes.html";n.download=o,document.body.appendChild(n),n.click(),document.body.removeChild(n),setTimeout(()=>{document.body.style.display=""},100)});</script></body></html>
